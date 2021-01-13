@@ -1,7 +1,6 @@
 # Server timing middleware
 
-Middleware to calculate the response time (in milliseconds) and save it into the
-[Server Timing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server-Timing) header.
+The middleware attaches the response time via [Server Timing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server-Timing) header.
 
 ## Requirements
 * PHP >= 7.4
@@ -10,7 +9,7 @@ Middleware to calculate the response time (in milliseconds) and save it into the
 
 ## Installation
 ```sh
-composer require middlewares/response-time
+composer require chi-teck/server-timing-middleware
 ```
 
 ## License

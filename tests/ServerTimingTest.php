@@ -39,7 +39,7 @@ class ServerTimingTest extends TestCase
 
         $expected_headers = [
             'example;desc="Example";dur=456',
-            'total;desc="Request execution time";dur=123.457',
+            'total;desc="Request execution time";dur=123.46',
         ];
         self::assertSame($expected_headers, $response->getHeaders()['Server-Timing']);
     }

@@ -16,7 +16,7 @@ class ServerTiming implements MiddlewareInterface
         $startTime = $server['REQUEST_TIME_FLOAT'];
         $response = $handler->handle($request);
 
-        $timing = sprintf('total;desc="Request execution time";dur=%.3f', 1000 * (microtime(true) - $startTime));
+        $timing = sprintf('total;desc="Request execution time";dur=%.2f', 1000 * (microtime(true) - $startTime));
         return $response->withAddedHeader('Server-Timing', $timing);
     }
 }

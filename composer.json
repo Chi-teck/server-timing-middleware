@@ -1,0 +1,44 @@
+{
+    "name": "chi-teck/server-timing-middleware",
+    "type": "library",
+    "description": "PSR-7 and PSR-15 server timing middleware",
+    "license": "MIT",
+    "keywords": [
+        "PSR-7",
+        "PSR-15",
+        "HTTP middleware",
+        "Server timing"
+    ],
+    "homepage": "https://github.com/Chi-teck/server-timing-middleware",
+    "support": {
+        "issues": "https://github.com/Chi-teck/server-timing-middleware/issues"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "psr/http-message": "^1.0",
+        "psr/http-server-middleware": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.5",
+        "laminas/laminas-diactoros": "^2.5",
+        "symfony/phpunit-bridge": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChiTeck\\ServerTimingMiddleware\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ChiTeck\\ServerTimingMiddleware\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "lint": "phpcs",
+        "test": "phpunit"
+    }
+}

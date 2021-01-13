@@ -13,4 +13,4 @@ composer require chi-teck/server-timing-middleware
 ```
 
 ## License
-The MIT License
+The MIT License.
